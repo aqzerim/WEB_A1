@@ -48,7 +48,7 @@
                 </div>
               </section>
 
-      <section id="request">
+              <section id="request">
                 <div id="centered">
                     <form>
                         <div class="container">
@@ -68,16 +68,17 @@
                                             <div class="form-group">
                                                 <label for="email">Email:</label>
                                                 <input type="email" class="form-control" id="email" name="email" maxlength="50">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="service">Choose service:</label>
-                                                <select class="form-control" id="service" name="service">
-                                                    <option value="1">Complete selection of care</option>
-                                                    <option value="2">Adviсes</option>
-                                                    <option value="3">Dermatologist service</option>
-                                                    <option value="4">Cosmetologist service</option>
-                                                </select>
-                                            </div>
+
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Choose service:
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="#">Complete selection of care</a></li>
+                                                  <li><a class="dropdown-item" href="#">Adviсes</a></li>
+                                                  <li><a class="dropdown-item" href="#">Dermatologist service</a></li>
+                                                </ul>
+                                              </div>
                                             <div class="form-group">
                                                 <label for="comment">Comment or Message &#8595;</label>
                                                 <textarea class="form-control" id="comment" name="comment" rows="4" maxlength="1000"></textarea>
@@ -97,6 +98,7 @@
                     Your request has been submitted successfully!
                 </div>
             </section>
+            
 
   <footer class="footer">
     <div class="container">
