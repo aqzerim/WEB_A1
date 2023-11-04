@@ -1,3 +1,0 @@
-interface GameItem {
-    String getName();
-}
